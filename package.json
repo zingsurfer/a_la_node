@@ -4,7 +4,8 @@
   "description": "A RESTful hapi node API for all the delish icecream flavors in the world!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bootstrap.js"
   },
   "author": "Autumn Martin",
   "license": "ISC",
