@@ -4,8 +4,14 @@
   "description": "A RESTful hapi node API for all the delish icecream flavors in the world!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bootstrap.js"
   },
   "author": "Autumn Martin",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "hapi": "^17.6.0"
+  }
 }
