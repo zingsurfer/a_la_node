@@ -24,10 +24,13 @@ A JavaScript engine written in C++. In other words, a C++ program that receives 
 ### Knex.js
 A query builder for relational database management systems (RDBMSes) like MySQL.
 
-Create a local postgresql database: `$ createdb database_name`
+### Database setup, migrations, & seeding
+Create a local postgresql database: `$ createdb a_la_node`
 To create a migration: `$ knex migrate:make migrationName`
 To run the latest migration: `$ knex migrate:latest`
 To rollback a migration: `$ knex migrate:down`
+To seed: `$ knex seed:run`
+Check it by running `$ psql a_la_node` & `\dt` (or whatever SQL command your heart desires)
 
 ### Hapi.js
 A web framework for building web apps, APIs, & services.
