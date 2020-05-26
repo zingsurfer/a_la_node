@@ -8,15 +8,18 @@ module.exports = {
       database: 'a_la_node',
       filename: 'postgres://localhost/a_la_node'
     },
-    migrations: './migrations'
+    migrations: {
+      directory: './migrations'
+    },
+    seeds: {
+      directory: './seeds'
+    }
   },
 
   staging: {
-    client: 'postgresql',
+    client: 'pg',
     connection: {
       database: 'a_la_node',
-      user:     'username',
-      password: 'password'
     },
     pool: {
       min: 2,
@@ -28,11 +31,9 @@ module.exports = {
   },
 
   production: {
-    client: 'postgresql',
+    client: 'pg',
     connection: {
       database: 'a_la_node',
-      user:     'username',
-      password: 'password'
     },
     pool: {
       min: 2,
@@ -42,5 +43,4 @@ module.exports = {
       tableName: 'knex_migrations'
     }
   }
-
 };
