@@ -43,6 +43,9 @@ To rollback a migration: `$ knex migrate:down`
 To seed: `$ knex seed:run`
 Check it by running `$ psql a_la_node` & `\dt` (or whatever SQL command your heart desires). Run `exit` when you're done.
 
+### Running it locally
+Start the server: `npm start` and visit http://localhost:8080/api/v1/icecreams
+
 ### Hapi.js
 A web framework for building web apps, APIs, & services.
 
